@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Design version="12" device_library_hint_path="../../../../solution-demo/mtb_shared/mtb-pdl-cat2/latest-v1.X/devicesupport.xml" xmlns="http://cypress.com/xsd/cydesignfile_v3">
-    <ToolInfo version="2.2.2.3415"/>
+    <ToolInfo version="2.4.0.5721"/>
     <Devices>
         <Device mpn="CY8C4149AZI-S598">
             <BlockConfig>
@@ -1236,10 +1236,6 @@
                     <Port name="scb[0].i2c_sda[0]"/>
                 </Net>
                 <Net>
-                    <Port name="ioss[0].port[11].pin[4].analog[0]"/>
-                    <Port name="msc[0].msc[0].s_pad[12]"/>
-                </Net>
-                <Net>
                     <Port name="ioss[0].port[3].pin[0].analog[0]"/>
                     <Port name="msc[0].msc[0].s_pad[0]"/>
                 </Net>
@@ -1300,12 +1296,36 @@
                     <Port name="msc[1].msc[0].s_pad[6]"/>
                 </Net>
                 <Net>
+                    <Port name="ioss[0].port[5].pin[5].analog[0]"/>
+                    <Port name="msc[1].msc[0].s_pad[7]"/>
+                </Net>
+                <Net>
+                    <Port name="ioss[0].port[5].pin[6].analog[0]"/>
+                    <Port name="msc[1].msc[0].s_pad[12]"/>
+                </Net>
+                <Net>
+                    <Port name="ioss[0].port[5].pin[6].analog[0]"/>
+                    <Port name="msc[1].msc[0].s_pad[12]"/>
+                </Net>
+                <Net>
+                    <Port name="ioss[0].port[5].pin[7].analog[0]"/>
+                    <Port name="msc[1].msc[0].s_pad[11]"/>
+                </Net>
+                <Net>
                     <Port name="ioss[0].port[7].pin[0].analog[0]"/>
                     <Port name="msc[1].msc[0].cmod1pad[0]"/>
                 </Net>
                 <Net>
                     <Port name="ioss[0].port[7].pin[1].analog[0]"/>
                     <Port name="msc[1].msc[0].cmod2pad[0]"/>
+                </Net>
+                <Net>
+                    <Port name="ioss[0].port[7].pin[6].analog[0]"/>
+                    <Port name="msc[1].msc[0].s_pad[10]"/>
+                </Net>
+                <Net>
+                    <Port name="ioss[0].port[7].pin[7].analog[0]"/>
+                    <Port name="msc[1].msc[0].s_pad[9]"/>
                 </Net>
                 <Net>
                     <Port name="ioss[0].port[9].pin[0].analog[0]"/>
@@ -1318,30 +1338,6 @@
                 <Net>
                     <Port name="ioss[0].port[9].pin[2].analog[0]"/>
                     <Port name="msc[1].msc[0].s_pad[2]"/>
-                </Net>
-                <Net>
-                    <Port name="ioss[0].port[5].pin[6].analog[0]"/>
-                    <Port name="msc[1].msc[0].s_pad[12]"/>
-                </Net>
-                <Net>
-                    <Port name="ioss[0].port[5].pin[5].analog[0]"/>
-                    <Port name="msc[1].msc[0].s_pad[7]"/>
-                </Net>
-                <Net>
-                    <Port name="ioss[0].port[5].pin[6].analog[0]"/>
-                    <Port name="msc[1].msc[0].s_pad[12]"/>
-                </Net>
-                <Net>
-                    <Port name="ioss[0].port[5].pin[7].analog[0]"/>
-                    <Port name="msc[1].msc[0].s_pad[11]"/>
-                </Net>
-                <Net>
-                    <Port name="ioss[0].port[7].pin[6].analog[0]"/>
-                    <Port name="msc[1].msc[0].s_pad[10]"/>
-                </Net>
-                <Net>
-                    <Port name="ioss[0].port[7].pin[7].analog[0]"/>
-                    <Port name="msc[1].msc[0].s_pad[9]"/>
                 </Net>
                 <Net>
                     <Port name="ioss[0].port[9].pin[3].analog[0]"/>
@@ -1360,13 +1356,13 @@
                     <Port name="msc[0].msc[0].s_pad[12]"/>
                 </Net>
                 <Net>
+                    <Port name="peri[0].div_16[1].clk[0]"/>
+                    <Port name="scb[0].clock[0]"/>
+                </Net>
+                <Net>
                     <Port name="msc[0].msc[0].clock_msc[0]"/>
                     <Port name="msc[1].msc[0].clock_msc[0]"/>
                     <Port name="peri[0].div_16[0].clk[0]"/>
-                </Net>
-                <Net>
-                    <Port name="peri[0].div_16[1].clk[0]"/>
-                    <Port name="scb[0].clock[0]"/>
                 </Net>
             </Netlist>
         </Device>
